@@ -4,7 +4,8 @@ def calculate_subnet_details(prefix_length):
     num_ip_addresses = 2 ** (32 - prefix_length)
     num_hosts = num_ip_addresses - 2
     total_num_networks = 256 // num_subnets
-    return (
+    return 
+    (
         (subnet_mask >> 24) & 0xFF,
         (subnet_mask >> 16) & 0xFF,
         (subnet_mask >> 8) & 0xFF,
